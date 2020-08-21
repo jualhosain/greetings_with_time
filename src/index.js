@@ -1,17 +1,51 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+import ReactDom from 'react-dom'
+import './index.css'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const event = ['Good Morning', 'Good Evening', 'Good Night']
+const estyle = [{color: 'white'}, {color: 'yellow'}, {color: 'black'}]
+let eventCurr;
+let eventStyle;
+const date = new Date()
+ 
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+	let currhour = date.getHours();
+	if(currhour <12 && currhour > 0){
+		eventCurr = event[0]
+		eventStyle = estyle[0]
+	}else if(currhour <20 && currhour > 12){
+		eventCurr = event[1]
+		eventStyle = estyle[1]
+	}else{
+		eventCurr = event[2]
+		eventStyle = estyle[2]
+	}
+
+let imgstyle = { 
+	width: '100%',
+	height: '100vh',
+	objectFit: 'cover',
+	position: 'absolute',
+	top: '0',
+	zIndex: -1
+}
+
+let time =  date.toLocaleTimeString();
+
+ReactDom.render(
+  <>
+    <img src='./img/2.jpg' style={imgstyle} />
+    <div style={{fontSize:'3rem' ,display:'flex',justifyContent:'center',alignItems:'center',height: '100vh' }}>
+	    <h1 style={eventStyle}>Hey Jual,
+	     	<br />  {eventCurr}
+	     	<br />
+		     	 <span>
+					Time: {time}
+		      	</span> 
+	     </h1>
+	     
+    </div>
+
+    </>,
+  document.getElementById('main')
+)
