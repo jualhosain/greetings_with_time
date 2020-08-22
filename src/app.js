@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 const event = ['Good Morning', 'Good Evening', 'Good Night']
 const estyle = [{ color: 'white' }, { color: 'yellow' }, { color: 'black' }]
@@ -28,9 +28,12 @@ let imgstyle = {
     zIndex: -1
 }
 
-let time = date.toLocaleTimeString();
 
 const App = () => {
+    let [time, setTime] = useState(new Date().toLocaleTimeString())
+setInterval(()=>{
+    setTime(new Date().toLocaleTimeString())
+}, )
     return (
         <>
             <img src='./img/2.jpg' style={imgstyle} />
