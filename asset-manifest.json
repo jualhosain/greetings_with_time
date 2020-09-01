@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/greetings_with_time/static/css/main.e0225eb8.chunk.css",
+    "main.js": "/greetings_with_time/static/js/main.5186653f.chunk.js",
+    "main.js.map": "/greetings_with_time/static/js/main.5186653f.chunk.js.map",
+    "runtime-main.js": "/greetings_with_time/static/js/runtime-main.e69e1876.js",
+    "runtime-main.js.map": "/greetings_with_time/static/js/runtime-main.e69e1876.js.map",
+    "static/js/2.090a83cd.chunk.js": "/greetings_with_time/static/js/2.090a83cd.chunk.js",
+    "static/js/2.090a83cd.chunk.js.map": "/greetings_with_time/static/js/2.090a83cd.chunk.js.map",
+    "index.html": "/greetings_with_time/index.html",
+    "precache-manifest.933a9be10b22db041df3e64dae88a267.js": "/greetings_with_time/precache-manifest.933a9be10b22db041df3e64dae88a267.js",
+    "service-worker.js": "/greetings_with_time/service-worker.js",
+    "static/css/main.e0225eb8.chunk.css.map": "/greetings_with_time/static/css/main.e0225eb8.chunk.css.map",
+    "static/js/2.090a83cd.chunk.js.LICENSE.txt": "/greetings_with_time/static/js/2.090a83cd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e69e1876.js",
+    "static/js/2.090a83cd.chunk.js",
+    "static/css/main.e0225eb8.chunk.css",
+    "static/js/main.5186653f.chunk.js"
+  ]
+}
